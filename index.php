@@ -10,6 +10,6 @@
 <body>
 <h1>Tomas - valdo HTML <?php print 'ir PHP'; ?> :D</h1>
 <p>Belenkas belnkas belenkaip, laukiam php pagaliau kazkokio</p>
-<p><?php print date('Y-m-d H:i:s'); ?></p>
+<p>Atidaryta: <?php print date('Y-m-d H:i:s'); ?></p>
 </body>
 </html>
