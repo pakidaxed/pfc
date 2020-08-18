@@ -5,11 +5,29 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><?php print 'As, ' . date('d') . ' ir PHP'; ?> !</title>
+    <title>OOP PHP mokomes Hello World!</title>
+    <style>
+        .bomb {
+            background-image: url("https://www.pngitem.com/pimgs/m/40-408175_bomb-transparent-cs-go-csgo-c4-transparent-hd.png");
+            background-size: cover;
+            width: <?php print 100 + date('s'); ?>px;
+            height: <?php print 100 + date('s'); ?>px;
+            position: relative;
+        }
+
+        span {
+            text-align: center;
+            color: aqua;
+            font-size: 25px;
+            font-weight: bold;
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-<h1>Tomas - valdo HTML <?php print 'ir PHP jau nuo ' . date('Y') . 'metu.'; ?></h1>
-<p>Belenkas belnkas belenkaip, laukiam php pagaliau kazkokio</p>
-<p>Viskas prasidejo <?php print date('m') . ' menesio, ' . date('d') . 'diena'; ?>.</p>
+<div class="bomb">
+<span><?php print date('s'); ?></span>
+</div>
 </body>
 </html>
