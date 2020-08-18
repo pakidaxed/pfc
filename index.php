@@ -7,12 +7,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>OOP PHP mokomes Hello World!</title>
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .bomb-box {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
         .bomb {
-            background-image: url("https://www.pngitem.com/pimgs/m/40-408175_bomb-transparent-cs-go-csgo-c4-transparent-hd.png");
+            background-image: url("https://i.imgur.com/1q8YiXb.png");
             background-size: cover;
-            width: <?php print 100 + date('s'); ?>px;
-            height: <?php print 100 + date('s'); ?>px;
-            position: relative;
+            width: <?php print 10 * date('s'); ?>px;
+            height: <?php print 10 * date('s'); ?>px;
         }
 
         span {
@@ -20,14 +32,14 @@
             color: aqua;
             font-size: 25px;
             font-weight: bold;
-            position: absolute;
-            bottom: 0;
+            border: 1px solid red;
         }
     </style>
 </head>
 <body>
-<div class="bomb">
-<span><?php print date('s'); ?></span>
+<div class="bomb-box">
+    <div class="bomb"></div>
+    <span><?php print date('s'); ?></span>
 </div>
 </body>
 </html>
