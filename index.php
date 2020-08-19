@@ -1,3 +1,7 @@
+<?php
+$bomb = 'https://i.imgur.com/1q8YiXb.png';
+$explosion = 'https://i.pinimg.com/originals/a4/54/05/a454052e62b00974cfffcc4848ff9e3b.png';
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -21,10 +25,14 @@
         }
 
         .bomb {
-            background-image: url("https://i.imgur.com/1q8YiXb.png");
+            background-image: url("<?php print $bomb; ?>");
             background-size: cover;
-            width: <?php print 10 * date('s'); ?>px;
-            height: <?php print 10 * date('s'); ?>px;
+            width: <?php print 200 + date('s'); ?>px;
+            height: <?php print 200 + date('s'); ?>px;
+        }
+
+        .\30\30 {
+            background-image: url("<?php print $explosion; ?>") !important;
         }
 
         span {
@@ -32,14 +40,13 @@
             color: aqua;
             font-size: 25px;
             font-weight: bold;
-            border: 1px solid red;
         }
     </style>
 </head>
 <body>
 <div class="bomb-box">
-    <div class="bomb"></div>
-    <span><?php print date('s'); ?></span>
+    <div class="<?php print date('s'); ?> bomb"></div>
+    <span class="<?php print date('s'); ?>"><?php print date('s'); ?></span>
 </div>
 </body>
 </html>
