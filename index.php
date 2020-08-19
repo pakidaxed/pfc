@@ -1,6 +1,14 @@
 <?php
-$bomb = 'https://i.imgur.com/1q8YiXb.png';
-$explosion = 'https://i.pinimg.com/originals/a4/54/05/a454052e62b00974cfffcc4848ff9e3b.png';
+$distance = rand(1000, 2000); // Atstumas
+$consumption = 12 / 100;      // Suvartojmas 100km
+$price_l = 0.98;              // Kuro Kaina 1litro
+
+$fuel_total = $distance * $consumption;
+$price_trip = $fuel_total * $price_l;
+
+$li_dist = "Nukeliautas atstumas: $distance km.";
+$li_cons = "Kelioneje suvartota $fuel_total l kuro.";
+$li_cost = "Kelione kainavo $price_trip EUR.";
 ?>
 <!doctype html>
 <html lang="en">
@@ -10,43 +18,13 @@ $explosion = 'https://i.pinimg.com/originals/a4/54/05/a454052e62b00974cfffcc4848
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>OOP PHP mokomes Hello World!</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        .bomb-box {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .bomb {
-            background-image: url("<?php print $bomb; ?>");
-            background-size: cover;
-            width: <?php print 200 + date('s'); ?>px;
-            height: <?php print 200 + date('s'); ?>px;
-        }
-
-        .\30\30 {
-            background-image: url("<?php print $explosion; ?>") !important;
-        }
-
-        span {
-            text-align: center;
-            color: aqua;
-            font-size: 25px;
-            font-weight: bold;
-        }
-    </style>
 </head>
 <body>
-<div class="bomb-box">
-    <div class="<?php print date('s'); ?> bomb"></div>
-    <span class="<?php print date('s'); ?>"><?php print date('s'); ?></span>
-</div>
+<h1>Keliones skaicuokle</h1>
+<ul>
+    <li><?php print $li_dist; ?></li>
+    <li><?php print $li_cons; ?></li>
+    <li><?php print $li_cost; ?></li>
+</ul>
 </body>
 </html>
