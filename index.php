@@ -1,30 +1,36 @@
 <?php
-$distance = rand(1000, 2000); // Atstumas
-$consumption = 12 / 100;      // Suvartojmas 100km
-$price_l = 0.98;              // Kuro Kaina 1litro
+$money = rand(10, 40);
+$beer_price = 3;
 
-$fuel_total = $distance * $consumption;
-$price_trip = $fuel_total * $price_l;
+$beer_image = '<img src="https://banner.uclipart.com/20200112/rht/beer-beer-glass-pint-glass.png" alt="pilnas bokalas" width="100" />';
+$beer_image_empty = '<img src="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/wheat-beer-glass-24399079_867643_ED.jpg" alt="pilnas bokalas" width="100" />';
 
-$li_dist = "Nukeliautas atstumas: $distance km.";
-$li_cons = "Kelioneje suvartota $fuel_total l kuro.";
-$li_cost = "Kelione kainavo $price_trip EUR.";
+$total_beers = floor($money / 3);
+
+
 ?>
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>OOP PHP mokomes Hello World!</title>
 </head>
 <body>
-<h1>Keliones skaicuokle</h1>
-<ul>
-    <li><?php print $li_dist; ?></li>
-    <li><?php print $li_cons; ?></li>
-    <li><?php print $li_cost; ?></li>
-</ul>
+<div>Viso bokalu: <?php print $total_beers; ?></div>
+
+<?php
+$finish_time = date('H:i');
+$drunk_status = 'A';
+for ($i = 1; $i <= $total_beers; $i++) {
+    print $finish_time . ' - ';
+    print $i * $beer_price . ' EUR';
+    print $i % 4 === 0 ? $drunk_status .= 'A' : $drunk_status;
+    print str_repeat($beer_image_empty, $i - 1);
+    print $beer_image;
+    print '<br />';
+    $drink_duration = rand(20, 30);
+    $finish_time = date('H:i', strtotime("$finish_time +$drink_duration minutes"));
+}
+?>
 </body>
 </html>
