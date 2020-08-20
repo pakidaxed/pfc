@@ -1,41 +1,31 @@
 <?php
-$products = [
+define('STATUS_CLOSED', 0); // Closed, working fine
+define('STATUS_OPEN', 1);   // Open for play
+define('STATUS_BROKEN', 2); // Closed with a reason
+
+$bowling = [
     [
-        [
-            'name' => 'Kiaušiniai',
-            'qty' => 13,
+        'status' => STATUS_OPEN,
+        'bowls' => [
+            [true, false, false, true],
+            [false, false, true],
+            [false, true],
+            [true]
         ],
-        [
-            'name' => 'Grietinė',
-            'qty' => 1,
-        ],
-        [
-            'name' => 'Jogurtas',
-            'qty' => 2,
-        ],
-        [
-            'name' => 'Žuvis',
-            'qty' => 0,
-        ]
+        'problems' => []
     ],
     [
-        [
-            'name' => 'Pienas',
-            'qty' => 1,
+        'status' => STATUS_BROKEN,
+        'bowls' => [
+            [false, false, false, false],
+            [false, false, false],
+            [false, false],
+            [false]
         ],
-        [
-            'name' => 'Kefyras',
-            'qty' => 0,
-        ],
-        [
-            'name' => 'Degtinė',
-            'qty' => 2,
-        ],
-        [
-            'name' => 'Kečupas',
-            'qty' => 2,
+        'problems' => [
+            'Client pissed the floor all over, need to clean it before opening'
         ]
     ]
 ];
 
-var_dump($products);
+var_dump($bowling);
