@@ -28,29 +28,46 @@ $led_machine = [
         .col {
             width: 30px;
             height: 30px;
+            border: 1px solid black;
+            box-sizing: border-box;
         }
 
-        .led-3 {
+        .col:hover {
+            transform: scale(1.3);
+            cursor: pointer;
+        }
+
+        .col.led-3 {
             background-color: red;
         }
 
-        .led-2 {
+        .col.led-2 {
             background-color: yellow;
         }
 
-        .led-1 {
+        .col.led-1 {
             background-color: green;
+        }
+
+        .col.no-bg {
+            background-color: black !important;
+            transition: background-color 1.5s;
         }
     </style>
 </head>
 <body>
-    <?php
-    foreach ($led_machine as $row): ?>
-        <div class="row">
-            <?php for ($i = 0; $i < count($row); $i++): ?>
-                <div class="col <?php print 'led-' . $row[$i]; ?>"></div>
-            <?php endfor; ?>
-        </div>
-    <?php endforeach; ?>
+<?php
+foreach ($led_machine as $row): ?>
+    <div class="row">
+        <?php for ($i = 0; $i < count($row); $i++): ?>
+            <div class="col <?php print 'led-' . $row[$i]; ?>"></div>
+        <?php endfor; ?>
+    </div>
+<?php endforeach; ?>
+<script>
+    addEventListener("click", e => {
+        e.path[0].classList.toggle("no-bg")
+    })
+</script>
 </body>
 </html>
