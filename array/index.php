@@ -12,7 +12,7 @@ define('PROBLEM_PRIORITY_URGENT', 3); // Today (ASAP)
 $bowling = [
     [
         'status' => STATUS_OPEN,
-        'bowls' => [
+        'pins' => [
             [true, false, false, true],
             [false, false, true],
             [false, true],
@@ -27,7 +27,7 @@ $bowling = [
     ],
     [
         'status' => STATUS_BROKEN,
-        'bowls' => [
+        'pins' => [
             [false, false, false, false],
             [false, false, false],
             [false, false],
