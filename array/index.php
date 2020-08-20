@@ -1,49 +1,56 @@
 <?php
-define('STATUS_CLOSED', 0);   // Closed, working fine
-define('STATUS_OPEN', 1);     // Open for play
-define('STATUS_BROKEN', 2);   // Closed with a reason
+define('LED_OFF', 0);
+define('LED_G', 1);
+define('LED_Y', 2);
+define('LED_R', 3);
 
-define('PROBLEM_PRIORITY_LOW', 0);    // Need planing
-define('PROBLEM_PRIORITY_MID', 1);    // Period 30 days
-define('PROBLEM_PRIORITY_HIGH', 2);   // Period 1 week
-define('PROBLEM_PRIORITY_URGENT', 3); // Today (ASAP)
-
-
-$bowling = [
-    [
-        'status' => STATUS_OPEN,
-        'pins' => [
-            [true, false, false, true],
-            [false, false, true],
-            [false, true],
-            [true]
-        ],
-        'problems' => [
-            [
-                'message' => 'Missing one of the chairs by the table',
-                'priority' => PROBLEM_PRIORITY_MID
-            ]
-        ]
-    ],
-    [
-        'status' => STATUS_BROKEN,
-        'pins' => [
-            [false, false, false, false],
-            [false, false, false],
-            [false, false],
-            [false]
-        ],
-        'problems' => [
-            [
-                'message' => 'Client pissed the floor all over, need to clean it before opening',
-                'priority' => PROBLEM_PRIORITY_URGENT
-            ],
-            [
-                'message' => 'Some of the bowls are old',
-                'priority' => PROBLEM_PRIORITY_LOW
-            ]
-        ]
-    ]
+$led_machine = [
+    [LED_G, LED_G, LED_G, LED_G, LED_G, LED_G, LED_G, LED_G],
+    [LED_G, LED_Y, LED_Y, LED_Y, LED_Y, LED_Y, LED_Y, LED_G],
+    [LED_G, LED_Y, LED_R, LED_R, LED_R, LED_R, LED_Y, LED_G],
+    [LED_G, LED_Y, LED_R, LED_Y, LED_Y, LED_R, LED_Y, LED_G],
+    [LED_G, LED_Y, LED_R, LED_Y, LED_Y, LED_R, LED_Y, LED_G],
+    [LED_G, LED_Y, LED_R, LED_R, LED_R, LED_R, LED_Y, LED_G],
+    [LED_G, LED_Y, LED_Y, LED_Y, LED_Y, LED_Y, LED_Y, LED_G],
+    [LED_G, LED_G, LED_G, LED_G, LED_G, LED_G, LED_G, LED_G]
 ];
+?>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .row {
+            display: flex;
+        }
 
-var_dump($bowling);
+        .col {
+            width: 30px;
+            height: 30px;
+        }
+
+        .led-3 {
+            background-color: red;
+        }
+
+        .led-2 {
+            background-color: yellow;
+        }
+
+        .led-1 {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <?php
+    foreach ($led_machine as $row): ?>
+        <div class="row">
+            <?php for ($i = 0; $i < count($row); $i++): ?>
+                <div class="col <?php print 'led-' . $row[$i]; ?>"></div>
+            <?php endfor; ?>
+        </div>
+    <?php endforeach; ?>
+</body>
+</html>
