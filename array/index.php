@@ -64,6 +64,7 @@ foreach ($led_machine as $row): ?>
         <?php endfor; ?>
     </div>
 <?php endforeach; ?>
+<p>Press the LED you want to turn it off.</p>
 <script>
     addEventListener("click", e => {
         e.path[0].classList.toggle("no-bg")
