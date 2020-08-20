@@ -50,8 +50,18 @@ $led_machine = [
         }
 
         .col.no-bg {
-            background-color: black !important;
+            background-color: white !important;
             transition: background-color 1.5s;
+        }
+
+        .col.no-bg-no-transition {
+            background-color: black !important;
+            transition: background-color 0.5s;
+        }
+
+        .col.reset-bg {
+            background-color: black;
+            transition: background-color 0.5s;
         }
     </style>
 </head>
@@ -65,9 +75,32 @@ foreach ($led_machine as $row): ?>
     </div>
 <?php endforeach; ?>
 <p>Press the LED you want to turn it off.</p>
+<input type="button" id="reset" value="Reset all"/>
 <script>
     addEventListener("click", e => {
         e.path[0].classList.toggle("no-bg")
+    })
+    document.getElementById("reset").addEventListener("click", cl => {
+        const col = document.querySelectorAll(".col")
+        let time = 0
+        let removeTime = 10 * col.length + 20
+        let resetTime = removeTime
+
+        col.forEach(x => {
+            time += 10
+            resetTime += 20
+            setTimeout(() => {
+                x.classList.add("no-bg-no-transition");
+            }, time);
+            setTimeout(() => {
+                x.classList.remove("no-bg-no-transition")
+                x.classList.add("reset-bg")
+            }, removeTime);
+            setTimeout(() => {
+                x.classList.remove("reset-bg")
+                x.classList.remove("no-bg")
+            }, resetTime);
+        })
     })
 </script>
 </body>
