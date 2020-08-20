@@ -12,6 +12,24 @@ $led_machine = [
     [LED_G, LED_Y, LED_R, LED_Y, LED_Y, LED_R, LED_Y, LED_G],
     [LED_G, LED_Y, LED_R, LED_R, LED_R, LED_R, LED_Y, LED_G],
     [LED_G, LED_Y, LED_Y, LED_Y, LED_Y, LED_Y, LED_Y, LED_G],
+    [LED_G, LED_G, LED_G, LED_G, LED_G, LED_G, LED_G, LED_G],
+
+    [LED_G, LED_G, LED_G, LED_G, LED_G, LED_G, LED_G, LED_G],
+    [LED_G, LED_Y, LED_Y, LED_Y, LED_Y, LED_Y, LED_Y, LED_G],
+    [LED_G, LED_Y, LED_R, LED_Y, LED_Y, LED_R, LED_Y, LED_G],
+    [LED_G, LED_Y, LED_R, LED_Y, LED_Y, LED_R, LED_Y, LED_G],
+    [LED_G, LED_Y, LED_R, LED_Y, LED_Y, LED_R, LED_Y, LED_G],
+    [LED_G, LED_Y, LED_R, LED_Y, LED_Y, LED_R, LED_Y, LED_G],
+    [LED_G, LED_Y, LED_Y, LED_Y, LED_Y, LED_Y, LED_Y, LED_G],
+    [LED_G, LED_G, LED_G, LED_G, LED_G, LED_G, LED_G, LED_G],
+
+    [LED_G, LED_G, LED_G, LED_G, LED_G, LED_G, LED_G, LED_G],
+    [LED_G, LED_Y, LED_Y, LED_Y, LED_Y, LED_Y, LED_Y, LED_G],
+    [LED_G, LED_Y, LED_R, LED_R, LED_R, LED_R, LED_Y, LED_G],
+    [LED_G, LED_Y, LED_Y, LED_Y, LED_Y, LED_Y, LED_Y, LED_G],
+    [LED_G, LED_Y, LED_Y, LED_Y, LED_Y, LED_Y, LED_Y, LED_G],
+    [LED_G, LED_Y, LED_R, LED_R, LED_R, LED_R, LED_Y, LED_G],
+    [LED_G, LED_Y, LED_Y, LED_Y, LED_Y, LED_Y, LED_Y, LED_G],
     [LED_G, LED_G, LED_G, LED_G, LED_G, LED_G, LED_G, LED_G]
 ];
 ?>
@@ -88,7 +106,7 @@ foreach ($led_machine as $row): ?>
 
         col.forEach(x => {
             time += 10
-            resetTime += 20
+            resetTime += 10
             setTimeout(() => {
                 x.classList.add("no-bg-no-transition");
             }, time);
