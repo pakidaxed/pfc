@@ -1,8 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="75dd35a4-d2f9-4ea8-882b-cd612cf6ca8e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/array/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,17 +57,33 @@
       <updated>1597656432786</updated>
       <workItem from="1597656433924" duration="36796000" />
       <workItem from="1597855054556" duration="223000" />
+      <workItem from="1597905937939" duration="1780000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="793" y="442" key="NewPhpFileDialog" timestamp="1597656439495">
+    <state x="729" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597905970805">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="793" y="442" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597656439495" />
+    <state x="729" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1597905970805" />
+    <state x="793" y="442" key="NewPhpFileDialog" timestamp="1597905978567">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="793" y="442" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597905978567" />
     <state x="460" y="163" key="SettingsEditor" timestamp="1597735281567">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
