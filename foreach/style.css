@@ -44,6 +44,15 @@ html {
     width: 200px;
     height: 300px;
 }
+.thug-burned {
+    background: url("cross.png");
+    background-size: contain;
+    width: 150px;
+    height: 300px;
+    position: absolute;
+    top: calc(50% - 260px) !important;
+    left: calc(50% - 160px);
+}
 
 .target {
     background: url("target.gif");

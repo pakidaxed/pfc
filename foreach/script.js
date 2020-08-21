@@ -3,7 +3,6 @@ const score = document.querySelector(".score")
 let targets_burned = 0
 addEventListener('click', ob => {
         if (ob.path[0].classList.contains("object")) {
-            const targets = ob.path.length - 3
             document.getElementById("audio_shot").play();
             setTimeout(() => {
                 document.getElementById("audio_explosion").play();
@@ -18,8 +17,11 @@ addEventListener('click', ob => {
             }, 300);
             setTimeout(() => {
                 id.classList.remove("on-fire")
-                id.classList.add("burned");
-                ob.path[0].classList.add("burned")
+                if (ob.path[0].classList.contains("thug")) {
+                    ob.path[0].classList.add("thug-burned")
+                } else {
+                    ob.path[0].classList.add("burned")
+                }
             }, 1500);
             targets_burned += 1
             if (targets_burned === targets) {

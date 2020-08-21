@@ -16,11 +16,11 @@ $game = [
             'y' => 950,
             'class' => 'car3'
         ],
-//        [
-//            'x' => 165,
-//            'y' => 300,
-//            'class' => 'thug'
-//        ]
+        [
+            'x' => 165,
+            'y' => 300,
+            'class' => 'thug'
+        ]
     ]
 ];
 ?>
@@ -41,13 +41,13 @@ $game = [
 //}
 //?>
 <div class="game-screen">
-<?php foreach ($game['objects'] as $object_id => $object): ?>
-    <div id="ob-<?= $object_id; ?>" class="<?= $object['class']; ?> object"
-         style="top: <?= $object['x']; ?>px; left: <?= $object['y']; ?>px;">
-        <div class="target"></div>
-    </div>
-<?php endforeach; ?>
-<div class="score">0 / 3</div>
+    <?php foreach ($game['objects'] as $object_id => $object): ?>
+        <div id="ob-<?= $object_id; ?>" class="<?= $object['class']; ?> object"
+             style="top: <?= $object['x']; ?>px; left: <?= $object['y']; ?>px;">
+            <div class="target"></div>
+        </div>
+    <?php endforeach; ?>
+    <div class="score">0 / <?= count($game['objects']); ?></div>
 </div>
 <audio id="audio_shot">
     <source src="shot.mp3" type="audio/mpeg">
@@ -58,6 +58,9 @@ $game = [
 <audio id="audio_explosion">
     <source src="explosion.mp3" type="audio/mpeg">
 </audio>
+<script>
+    const targets = <?= count($game['objects']); ?>
+</script>
 <script src="script.js"></script>
 </body>
 </html>
