@@ -40,7 +40,6 @@ html {
     left: calc(50% - 50px);
     display: inline-block;
     animation: jumping 1s infinite;
-    border: 1px solid red;
 }
 @keyframes jumping {
     0%   {top: -100px;}
