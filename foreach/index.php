@@ -41,6 +41,12 @@ $game = [
 //}
 //?>
 <div class="game-screen">
+    <div class="game-menu">
+        <div class="game-name">The Foreach Game
+            <button id="btn_play">START</button>
+            <button id="btn_replay">PLAY AGAIN?</button>
+        </div>
+    </div>
     <?php foreach ($game['objects'] as $object_id => $object): ?>
         <div id="ob-<?= $object_id; ?>" class="<?= $object['class']; ?> object"
              style="top: <?= $object['x']; ?>px; left: <?= $object['y']; ?>px;">
@@ -57,6 +63,9 @@ $game = [
 </audio>
 <audio id="audio_explosion">
     <source src="explosion.mp3" type="audio/mpeg">
+</audio>
+<audio id="audio_win">
+    <source src="win.mp3" type="audio/mpeg">
 </audio>
 <script>
     const targets = <?= count($game['objects']); ?>

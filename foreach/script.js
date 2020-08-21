@@ -25,8 +25,14 @@ addEventListener('click', ob => {
             }, 1500);
             targets_burned += 1
             if (targets_burned === targets) {
+                document.getElementById("audio_win").play();
                 score.classList.toggle("score-win")
                 score.innerHTML = "MISSION PASSED !"
+                setTimeout(() => {
+                    document.getElementById('btn_play').style.display = 'none'
+                    document.getElementById('btn_replay').style.display = 'block'
+                    document.querySelector('.game-menu').style.display = 'block'
+                }, 5000);
             } else {
                 score.innerHTML = targets_burned + '/' + targets;
             }
@@ -40,3 +46,9 @@ addEventListener('click', ob => {
         }
     }
 )
+document.getElementById("btn_play").addEventListener('click', e => {
+    document.querySelector(".game-menu").style.display = 'none';
+})
+document.getElementById("btn_replay").addEventListener('click', e => {
+    location.reload();
+})
