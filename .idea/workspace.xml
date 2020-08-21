@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75dd35a4-d2f9-4ea8-882b-cd612cf6ca8e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/foreach/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foreach/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/array/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/array/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +58,7 @@
       <updated>1597656432786</updated>
       <workItem from="1597656433924" duration="36796000" />
       <workItem from="1597855054556" duration="223000" />
-      <workItem from="1597905937939" duration="26628000" />
+      <workItem from="1597905937939" duration="41988000" />
     </task>
     <servers />
   </component>
@@ -80,14 +81,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="729" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1597905970805" />
-    <state x="793" y="442" key="NewPhpFileDialog" timestamp="1597905978567">
+    <state x="793" y="442" key="NewPhpFileDialog" timestamp="1597992036629">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="793" y="442" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597905978567" />
+    <state x="793" y="442" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597992036629" />
     <state x="460" y="163" key="SettingsEditor" timestamp="1597918842467">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="460" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597918842467" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1598006196791">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1598006196791" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1597946654469">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

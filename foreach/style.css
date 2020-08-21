@@ -1,0 +1,69 @@
+body {
+    background: url('bg.jpg') no-repeat;
+}
+html {
+    cursor: url('cursor.png'), auto;
+}
+.car1 {
+    background: url("car1.png");
+    position: absolute;
+    width: 417px;
+    height: 242px;
+}
+.car2 {
+    background: url("car2.png");
+    position: absolute;
+    width: 401px;
+    height: 239px;
+}
+.car3 {
+    background: url("car3.png");
+    background-size: contain;
+    position: absolute;
+    width: 480px;
+    height: 240px;
+}
+.thug {
+    background: url("thug.png");
+    background-size: contain;
+    position: absolute;
+    width: 200px;
+    height: 300px;
+}
+.target {
+    background: url("target.png");
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -100px;
+    left: calc(50% - 50px);
+    display: inline-block;
+    animation: jumping 1s infinite;
+    border: 1px solid red;
+}
+@keyframes jumping {
+    0%   {top: -100px;}
+    50%  {top: -120px;}
+    100% {top: -100px;}
+}
+.on-fire {
+    background: url("fire.png");
+    background-size: contain;
+    width: 450px;
+    height: 380px;
+    position: absolute;
+    top: calc(50% - 190px);
+    left: calc(50% - 225px);
+    transform: scale(2);
+    transition: transform 2s;
+}
+.burned {
+    background: url("burned.png");
+    background-size: contain;
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 200px);
+}
