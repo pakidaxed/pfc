@@ -1,6 +1,7 @@
 const object = document.querySelectorAll(".object")
 const score = document.querySelector(".score")
 let targets_burned = 0
+let missed_score = -1
 addEventListener('click', ob => {
         if (ob.path[0].classList.contains("object")) {
             document.getElementById("audio_shot").play();
@@ -34,15 +35,16 @@ addEventListener('click', ob => {
                     document.querySelector('.game-menu').style.display = 'block'
                 }, 5000);
             } else {
-                score.innerHTML = targets_burned + '/' + targets;
+                score.textContent = 'Destroyed: ' + targets_burned + '/' + targets;
             }
         } else {
+            missed_score += 1
             // MISSED COMMANDS
+            document.querySelector('.missed-score').textContent = 'Missed: ' + missed_score
             document.getElementById("audio_shot").play();
             setTimeout(() => {
                 document.getElementById("audio_miss").play();
             }, 500);
-            console.log('miss')
         }
     }
 )

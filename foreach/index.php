@@ -53,7 +53,8 @@ $game = [
             <div class="target"></div>
         </div>
     <?php endforeach; ?>
-    <div class="score">0 / <?= count($game['objects']); ?></div>
+    <div class="score"></div>
+    <div class="missed-score"></div>
 </div>
 <audio id="audio_shot">
     <source src="shot.mp3" type="audio/mpeg">

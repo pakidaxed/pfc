@@ -159,6 +159,23 @@ html {
     transition: transform 0.3s, opacity 0.3s;
 }
 
+.missed-score {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 80px;
+    right: 40px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.missed-score-add {
+    transform: scale(2);
+    color: red;
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
 .score-win {
     font-size: 200px;
     top: 400px;
