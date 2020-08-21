@@ -28,7 +28,7 @@ $game = [
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>THE GAME (foreach)</title>
+    <title>THE FOREACH GAME</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="shortcut icon" href="favicon.png"/>
 </head>
