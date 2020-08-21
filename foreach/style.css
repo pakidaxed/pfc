@@ -1,21 +1,34 @@
 body {
-    background: url('bg.jpg') no-repeat;
+    margin: 0;
+    padding: 0;
 }
+
 html {
+
+}
+
+.game-screen {
+    background: url('bg.jpg') no-repeat;
+    width: 1500px;
+    height: 900px;
+    position: relative;
     cursor: url('cursor.png'), auto;
 }
+
 .car1 {
     background: url("car1.png");
     position: absolute;
     width: 417px;
     height: 242px;
 }
+
 .car2 {
     background: url("car2.png");
     position: absolute;
     width: 401px;
     height: 239px;
 }
+
 .car3 {
     background: url("car3.png");
     background-size: contain;
@@ -23,6 +36,7 @@ html {
     width: 480px;
     height: 240px;
 }
+
 .thug {
     background: url("thug.png");
     background-size: contain;
@@ -30,6 +44,7 @@ html {
     width: 200px;
     height: 300px;
 }
+
 .target {
     background: url("target.png");
     background-size: contain;
@@ -41,11 +56,19 @@ html {
     display: inline-block;
     animation: jumping 1s infinite;
 }
+
 @keyframes jumping {
-    0%   {top: -100px;}
-    50%  {top: -120px;}
-    100% {top: -100px;}
+    0% {
+        top: -100px;
+    }
+    50% {
+        top: -120px;
+    }
+    100% {
+        top: -100px;
+    }
 }
+
 .on-fire {
     background: url("fire.png");
     background-size: contain;
@@ -57,6 +80,7 @@ html {
     transform: scale(2);
     transition: transform 2s;
 }
+
 .burned {
     background: url("burned.png");
     background-size: contain;
@@ -65,4 +89,26 @@ html {
     position: absolute;
     top: calc(50% - 100px);
     left: calc(50% - 200px);
+}
+
+.score {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+.score-add {
+    transform: scale(2);
+    color: red;
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.3s;
+}
+.score-win {
+    font-size: 200px;
+    top: 400px;
+    left: 500px;
+    content: 'ssss';
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
