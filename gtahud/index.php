@@ -6,7 +6,6 @@ $game = [
         'ammo' => '',
         'money' => 1000,
         'money_d' => '',
-        'wanted' => 0,
         'wanted_d' => '',
         'kills' => 0
     ],
