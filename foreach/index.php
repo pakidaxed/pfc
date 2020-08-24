@@ -40,6 +40,7 @@ $game = [
 //    $game['objects'][$object_id] = $object;
 //}
 //?>
+
 <div class="game-screen">
     <div class="game-menu">
         <div class="game-name">The Foreach Game
