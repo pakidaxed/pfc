@@ -108,7 +108,7 @@ for ($i = 1; $i <= 6; $i++) { // 6 tai max zvaigzduciu
     <div class="hud-item hud-progress-health">
         <div class="hud-health" style="width: <?= $game['player']['health'] ?>%"></div>
     </div>
-    <div class="hud-item">
+    <div class="hud-item hud-money">
         <?= $game['player']['money_d'] ?>
     </div>
     <div class="hud-item">

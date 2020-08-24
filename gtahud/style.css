@@ -69,6 +69,11 @@ body {
     background: url("desereagle.png");
     background-size: contain;
 }
+
 .hud-ammo.hud-item {
-height: 70px;
+    height: 70px;
+}
+
+.hud-money {
+    color: #438337;
 }
