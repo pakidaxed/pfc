@@ -77,3 +77,8 @@ body {
 .hud-money {
     color: #438337;
 }
+
+.hud-wanted {
+    width: 100px;
+    font-size: 100%;
+}

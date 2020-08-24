@@ -3,7 +3,7 @@ $game = [
     'player' => [
         'health' => rand(0, 73),
         'armor' => rand(1, 33),
-        'ammo' => '',
+        'ammo' => null,
         'money' => 1000,
         'money_d' => '',
         'wanted_d' => '',
@@ -99,7 +99,10 @@ for ($i = 1; $i <= 6; $i++) { // 6 tai max zvaigzduciu
                 <div class="hud-item hud-progress-armor">
                     <div class="hud-armor" style="width: <?= $game['player']['armor'] ?>%"></div>
                 </div>
-                <div class="hud-item hud-ammo"><?= $game['player']['ammo'] ?></div>
+                <?php
+                if (isset($game['player']['ammo']))  { ?>
+                    <div class="hud-item hud-ammo"><?= $game['player']['ammo'] ?></div>
+                <?php } ?>
             </div>
         </div>
     </div>
@@ -107,7 +110,7 @@ for ($i = 1; $i <= 6; $i++) { // 6 tai max zvaigzduciu
         <div class="hud-health" style="width: <?= $game['player']['health'] ?>%"></div>
     </div>
     <div class="hud-item hud-money"><?= $game['player']['money_d'] ?></div>
-    <div class="hud-item"><?= $game['player']['wanted_d'] ?></div>
+    <div class="hud-item hud-wanted"><?= $game['player']['wanted_d'] ?></div>
 </div>
 </body>
 </html>
