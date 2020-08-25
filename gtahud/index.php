@@ -73,8 +73,8 @@ foreach ($game['objects'] as $object_id => $object) {
         $game['player']['kills']++;
         $game['player']['money'] += 200;
     }
-    $game['player']['money_d'] = '$' . str_pad($game['player']['money'], 8, '0', STR_PAD_LEFT);
 }
+$game['player']['money_d'] = '$' . str_pad($game['player']['money'], 8, '0', STR_PAD_LEFT);
 
 for ($i = 1; $i <= 6; $i++) { // 6 tai max zvaigzduciu
     $i <= $game['player']['kills'] ? $game['player']['wanted_d'] .= '☆' : $game['player']['wanted_d'] .= '★';
@@ -100,7 +100,7 @@ for ($i = 1; $i <= 6; $i++) { // 6 tai max zvaigzduciu
                     <div class="hud-armor" style="width: <?= $game['player']['armor'] ?>%"></div>
                 </div>
                 <?php
-                if (isset($game['player']['ammo']))  { ?>
+                if (isset($game['player']['ammo'])) { ?>
                     <div class="hud-item hud-ammo"><?= $game['player']['ammo'] ?></div>
                 <?php } ?>
             </div>

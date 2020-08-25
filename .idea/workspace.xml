@@ -20,10 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75dd35a4-d2f9-4ea8-882b-cd612cf6ca8e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/konsultacija_array.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gtahud/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/gtahud/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gtahud/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/gtahud/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +43,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sym.lt" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
@@ -59,7 +57,7 @@
       <updated>1597656432786</updated>
       <workItem from="1597656433924" duration="36796000" />
       <workItem from="1597855054556" duration="223000" />
-      <workItem from="1597905937939" duration="73901000" />
+      <workItem from="1597905937939" duration="76193000" />
     </task>
     <servers />
   </component>
@@ -82,6 +80,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="729" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1597905970805" />
+    <state x="739" y="273" key="FileChooserDialogImpl" timestamp="1598337676986">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="739" y="273" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1598337676986" />
     <state x="793" y="442" key="NewPhpFileDialog" timestamp="1598276580814">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
