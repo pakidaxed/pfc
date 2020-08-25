@@ -100,9 +100,9 @@ for ($i = 1; $i <= 6; $i++) { // 6 tai max zvaigzduciu
                     <div class="hud-armor" style="width: <?= $game['player']['armor'] ?>%"></div>
                 </div>
                 <?php
-                if (isset($game['player']['ammo'])) { ?>
+                if (isset($game['player']['ammo'])) : ?>
                     <div class="hud-item hud-ammo"><?= $game['player']['ammo'] ?></div>
-                <?php } ?>
+                <?php endif; ?>
             </div>
         </div>
     </div>
