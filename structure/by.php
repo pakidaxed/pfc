@@ -1,4 +1,11 @@
 <?php
+/**
+ * Purifying the input from POST and generating new array for candidate
+ *
+ * @param array $array
+ * @param array $inputs
+ * @return array
+ */
 function purify(array &$array, array $inputs): array
 {
     if (isset($inputs['extras'])) modify_extras($inputs['extras']);
@@ -8,6 +15,12 @@ function purify(array &$array, array $inputs): array
     return $inputs;
 }
 
+/**
+ * If there any extras, puing then in one string for display
+ *
+ * @param array $extras
+ * @return string
+ */
 function modify_extras(array &$extras): string
 {
     $scars = 'Have scars and looks very aggressive';
@@ -51,12 +64,12 @@ if (isset($_POST)) {
                 <div class="item">Age: <span><?= $candidate['age']; ?></span></div>
                 <div class="item">Spec: <span><?= $candidate['spec']; ?></span></div>
                 <?php if ($candidate['extras']): ?>
-                <div class="item">Extra: <span><?= $candidate['extras']; ?></span></div>
+                    <div class="item">Extra: <span><?= $candidate['extras']; ?></span></div>
                 <?php endif; ?>
             </div>
         </div>
     <?php else: ?>
-    <h2>Form for joining the BY Force</h2>
+        <h2>Form for joining the BY Force</h2>
         <div class="form-box">
             <form method="post">
                 <div class="input">
