@@ -1,0 +1,81 @@
+
+.container {
+    width: 600px;
+    margin: 150px auto;
+}
+
+.form-box {
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.form-box input {
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-box input[type=checkbox], .form-box input[type=radio] {
+    width: auto;
+}
+
+.form-box input[type=submit] {
+    padding: 10px 20px;
+    border: 1px solid black;
+    margin-top: 20px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.certificate-box {
+    padding: 20px;
+    border: 3px solid #f1d170;
+    border-radius: 10px;
+    position: relative;
+}
+
+.certificate-info {
+    margin-top: 10px;
+}
+
+.certificate-info > .item > span {
+    font-size: 21px;
+    font-weight: bold;
+    color: black;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.certificate-box p {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.certificate-box span {
+    color: darkred;
+}
+
+.by-force-logo {
+    background: url("by_force_logo.png");
+    background-size: contain;
+    width: 100px;
+    height: 97px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.item {
+    font-size: 20px;
+}

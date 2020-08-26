@@ -1,33 +1,49 @@
+<?php
+function confirm_password($password, $confirmed_password)
+{
+
+    return $password === $confirmed_password;
+}
+if ($_POST) {
+    $email = trim(!empty($_POST['email']));
+
+}
+if (isset($_POST['email']) && isset($_POST['password']) && isset($_POST['password_confirm'])) {
+    $message = confirm_password($_POST['password'], $_POST['password_confirm']) ? 'Registracija sekminga' : 'Nesutampa PASS';
+}
+?>
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register form</title>
 </head>
 <body>
-
-<!-- 1. Sudarykite masyvą, kuriame būtų aprašyta Vilniaus:
-  "mayor" meras, string
-  "address" savivaldybės adresas, string
-  "number" numeris, string
-  "area" plotas kvadratiniais kilometrais, int
-  "elderships" seniunijų masyvas [] - BENT 3 SENIŪNIJOS -->
-<!-- 2. Kiekviena seniunija turi turėti:
-    title: pavadinimą, string
-    elder: seniunas, string
-    population: gyventojų skaičių, number -->
-<!-- 3. Atspausdinkite visų seniunijų pavadinimus -->
-<!-- 4. Atspaudinkite vienos iš seniunijų duomenis -->
-<!-- 5. Atspausdinkite visų seniunijų duomenis lentele -->
-<!-- 6. Atspausdinkite tik tų seniunijų duomenis kur gyventojų kiekis yra iki 20 tūkst. -->
-<!-- 7. Atspausdinkite tik tų seniunijų duomenis kur gyventojų kiekis yra virš 50 tūkst. -->
-<!-- 8. Atspausdinkite tik tų seniunijų duomenis
-   kur gyventojų kiekis yra nuo 30 iki 40 tūktstančių -->
-<!-- 9. Stulpeliu atspausdinkite kiekvienos seniūnijos gyventojų skaičių -->
-<!-- 10. Stulpeliu atspausdinkite kiekvienos seniūnijos gyventojų skaičių, išrikiavus mažėjimo tvarka -->
-<!-- 11. Susumuokite visų seniūnijos gyventojų skaičių -->
-<!-- 12. Suskaičiuokite vidutinį gyventojų skaičių vienoje seniūnijoje -->
-<!-- 13. Suskaičiuokite vidutinį gyventojų skaičių vienoje seniūnijoje atmetus didžiausią ir mažiausią seniuniją -->
+<div class="register-box">
+    <form method="post">
+        <div class="input">
+            <legend>Email:</legend>
+            <input type="email" name="email"/>
+        </div>
+        <div class="input">
+            <legend>Password:</legend>
+            <input type="password" name="password"/>
+        </div>
+        <div class="input">
+            <legend>Confirm Password:</legend>
+            <input type="password" name="password_confirm"/>
+        </div>
+        <div class="input">
+            <input type="submit" value="Register"/>
+        </div>
+    </form>
+    <?php if (isset($message)): ?>
+        <div class="message-box"><?= $message; ?></div>
+    <?php endif; ?>
+</div>
 
 </body>
 </html>

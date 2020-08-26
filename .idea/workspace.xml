@@ -20,9 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75dd35a4-d2f9-4ea8-882b-cd612cf6ca8e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/references/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/structure/by.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/structure/by.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/structure/functions/html.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/structure/ikrai.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/structure/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/structure/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/structure/templates/form.tpl.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gtahud/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/gtahud/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/konsultacija_array.php" beforeDir="false" afterPath="$PROJECT_DIR$/konsultacija_array.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/references/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/references/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +67,7 @@
       <updated>1597656432786</updated>
       <workItem from="1597656433924" duration="36796000" />
       <workItem from="1597855054556" duration="223000" />
-      <workItem from="1597905937939" duration="79277000" />
+      <workItem from="1597905937939" duration="112021000" />
     </task>
     <servers />
   </component>
@@ -85,21 +94,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="273" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1598337676986" />
-    <state x="793" y="442" key="NewPhpFileDialog" timestamp="1598350773027">
+    <state x="793" y="442" key="NewPhpFileDialog" timestamp="1598437913820">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="793" y="442" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598350773027" />
+    <state x="793" y="442" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598437913820" />
     <state x="460" y="163" key="SettingsEditor" timestamp="1597918842467">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="460" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597918842467" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1598006196791">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1598435413853">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1598006196791" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1597946654469">
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1598435413853" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1598358951308">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597946654469" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1598358951308" />
   </component>
 </project>
